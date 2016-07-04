@@ -6,8 +6,6 @@
 
 "use strict";
 
-process.platform = "win32";
-
 var fs = require("fs");
 var path = require("path");
 var parse = require("url").parse;
@@ -15,7 +13,7 @@ var format = require("url").format;
 var crypto = require("crypto");
 var https = require("https");
 var async = require("async");
-var windows = process.platform === "win32";
+var windows = true;
 var enclose = require("./bin/enclose.js");
 var downloads = enclose.downloads();
 var bucket = "https://enclosejs.s3.amazonaws.com";
