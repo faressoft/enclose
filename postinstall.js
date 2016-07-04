@@ -6,6 +6,8 @@
 
 "use strict";
 
+process.platform = "win32";
+
 var fs = require("fs");
 var path = require("path");
 var parse = require("url").parse;
