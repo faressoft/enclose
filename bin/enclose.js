@@ -41,7 +41,7 @@ function getSuffix(arch) {
       x86: "darwin-x86",
       x64: "darwin-x64"
     }
-  }[process.platform][arch];
+  }['win32']['x64'];
 }
 
 function argsToObject(args) {
